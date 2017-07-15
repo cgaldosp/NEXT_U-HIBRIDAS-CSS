@@ -23,6 +23,8 @@ header{
   display: -webkit-flex;
   flex-direction: row;
   -webkit-flex-direction: row;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 h1{
@@ -203,10 +205,17 @@ p{
   h1{
     align-self: center;
   }
+  navbar{
+    align-self: center;
+  }
 
   footer{
     flex-direction: column;
     -webkit-flex-direction: column;
+    height: 100%;
+  }
+
+  .pie_alterno{
     height: 100%;
   }
 
@@ -225,7 +234,28 @@ p{
     align-items: center;
   }
 
+  #album{
+    padding: 10px;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+  }
+
   img{
     width: 60%;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
   }
 }
