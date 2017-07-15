@@ -81,6 +81,15 @@ p{
   height: 40%;
 }
 
+#album{
+  background-color: #82c3a6;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  height: 40%;
+}
+
 #img_secundaria{
   background-color: #d5c75f;
   display: flex;
@@ -123,6 +132,21 @@ p{
   box-shadow: 2px 2px 2px 2px #82c3a6;
 }
 
+#img01{
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+#img03{
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+
+.escala{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .sombra_texto {
 	text-shadow: 2px 2px 2px #02010a;
 }
@@ -161,6 +185,13 @@ p{
   -webkit-flex-direction: row;
 }
 
+.pie_alterno{
+  height: 15%;
+}
+
+.img_alb{
+  width: 100%;
+}
 
 @media (max-width: 900px) {
   header{
